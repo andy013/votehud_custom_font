@@ -3033,12 +3033,52 @@ Scheme
 		//////////////////// CUSTOM FONT //////////////////////////////
 		//
 
+		"CustomNotoMonoVerySmall"
+		{
+			"1"
+			{
+				"name" "CustomNotoMono"
+				"tall" "8"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
 		"CustomNotoMonoSmall"
 		{
 			"1"
 			{
 				"name" "CustomNotoMono"
 				"tall" "10"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CustomNotoMonoMedium"
+		{
+			"1"
+			{
+				"name" "CustomNotoMono"
+				"tall" "12"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CustomNotoMonoLarge"
+		{
+			"1"
+			{
+				"name" "CustomNotoMono"
+				"tall" "14"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CustomNotoMonoExtraLarge"
+		{
+			"1"
+			{
+				"name" "CustomNotoMono"
+				"tall" "16"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -3051,6 +3091,82 @@ Scheme
 	// describes all the border types
 	Borders
 	{
+		CyanBorderThick 			// Custom Font Mod Border
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "15 255 255 255"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "15 255 255 255"
+					"offset" "1 0"
+				}
+				"3"
+				{
+					"color" "15 255 255 255"
+					"offset" "2 0"
+				}
+			}
+			Right
+			{
+				"1"
+				{
+					"color" "15 255 255 255"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "15 255 255 255"
+					"offset" "1 0"
+				}
+				"3"
+				{
+					"color" "15 255 255 255"
+					"offset" "2 0"
+				}
+			}
+			Top
+			{
+				"1"
+				{
+					"color" "15 255 255 255"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "15 255 255 255"
+					"offset" "1 0"
+				}
+				"3"
+				{
+					"color" "15 255 255 255"
+					"offset" "2 0"
+				}
+			}
+			Bottom
+			{
+				"1"
+				{
+					"color" "15 255 255 255"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "15 255 255 255"
+					"offset" "1 0"
+				}
+				"3"
+				{
+					"color" "15 255 255 255"
+					"offset" "2 0"
+				}
+			}
+		}
 		NoBorder
 		{
 			"inset" "0 0 0 0"
