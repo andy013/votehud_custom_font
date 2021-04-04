@@ -41,6 +41,7 @@ Program Files (x86)
                         └───votehud_custom_font     <----- Folder must be named correctly
                             │
                             │   info.vdf      <------ Mod files here
+			    │	README.md
                             └───resource
 ```
 
