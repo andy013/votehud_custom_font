@@ -75,7 +75,7 @@ CustomFontFiles
 		"name" "CustomNotoMono"
 		"english" 
 		{
-			"range" "0x021 0xFFFF"     <------ Must be set like this for font to display correctly
+			"range" "0x021 0xFFFF"     <------ Must be set like this
 		}
 	}
 }
