@@ -78,7 +78,7 @@
 		"enabled"		"1"
 		"border"		"TFFatLineBorderOpaque"
 		
-		"Header"
+		"Header"		// Vote caller - large custom font
 		{
 			"ControlName"	"Label"
 			"fieldName"		"Header"
@@ -89,29 +89,29 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%header%"
-			"textAlignment"		"north-west"
+			"textAlignment"	"north-west"
 			"dulltext"		"0"
-			"brighttext"		"0"
+			"brighttext"	"0"
 			"font"			"CustomNotoMonoMedium"   
 			"wrap"			"1"
 			"fgcolor_override"	"128 128 128 255"
 		}
 
-		"Header2"
+		"Header_small"		// Vote caller - small regular font
 		{
 			"ControlName"	"Label"
-			"fieldName"		"Header2"
+			"fieldName"		"Header_small"
 			"xpos"			"10"
-			"ypos"			"28"
+			"ypos"			"29"
 			"wide"			"130"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%header%"
-			"textAlignment"		"north-west"
+			"textAlignment"	"north-west"
 			"dulltext"		"0"
-			"brighttext"		"0"
-			"font"			"DefaultVerySmall"   
+			"brighttext"	"0"
+			"font"			"CustomVerdanaSmall"   
 			"wrap"			"1"
 			"fgcolor_override"	"128 128 128 255"
 		}
@@ -122,27 +122,27 @@
 			"ControlName"	"Label"
 			"fieldName"		"Wants_to_vote"
 			"xpos"			"10"
-			"ypos"			"35"
+			"ypos"			"36"
 			"wide"			"130"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"#TF_custom_font_mod_wants_to_vote"
-			"textAlignment"		"north-west"
+			"textAlignment"	"north-west"
 			"dulltext"		"0"
-			"brighttext"		"0"
-			"font"			"DefaultVerySmall"   
+			"brighttext"	"0"
+			"font"			"CustomVerdanaSmall"   
 			"wrap"			"1"
 			"fgcolor_override"	"128 128 128 255"
 		}
 		
-		"Issue" 			// Kick:
+		"Issue" 			// Kick: (or other vote issue strings)
 		{
 			"ControlName"	"Label"
 			"fieldName"		"Issue"
 			"xpos"			"10"
-			"ypos"			"43"
-			"wide"			"120"
+			"ypos"			"44"
+			"wide"			"130"
 			"tall"			"40"
 			"visible"		"1"
 			"enabled"		"1"
@@ -150,19 +150,19 @@
 			"textAlignment"	"north-west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"DefaultVerySmall"  
+			"font"			"CustomVerdanaSmall"  
 			"fgcolor_override"	"255 255 255 255"
 			"wrap"			"1"
 			"noshortcutsyntax" "1"
 		}
 
-		"Issue2" 			// Player to be kicks name - large custom font
+		"Kick_name_large" 			// Player to be kicks name - large custom font
 		{
 			"ControlName"	"Label"
-			"fieldName"		"Issue2"
+			"fieldName"		"Kick_name_large"
 			"xpos"			"10"
-			"ypos"			"-130"
-			"wide"			"120"
+			"ypos"			"-128"
+			"wide"			"130"
 			"tall"			"210"
 			"visible"		"1"
 			"enabled"		"1"
@@ -176,41 +176,41 @@
 			"noshortcutsyntax" "1"
 		}
 
-		"Issue3" 			// Player to be kicks name - small font
+		"Kick_name_small" 			// Player to be kicks name - small regular font
 		{
 			"ControlName"	"Label"
-			"fieldName"		"Issue3"
+			"fieldName"		"Kick_name_small"
 			"xpos"			"10"
-			"ypos"			"-18"
-			"wide"			"120"
-			"tall"			"100"
+			"ypos"			"0"
+			"wide"			"130"
+			"tall"			"172"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%voteissue%"
-			"textAlignment"	"north-west"
+			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"DefaultVerySmall"  
+			"font"			"CustomVerdanaSmall"  
 			"fgcolor_override"	"255 255 255 255"
 			"wrap"			"1"
 			"noshortcutsyntax" "1"
 		}
 
-		"Issue4" 			// Kick reason
+		"Kick_reason" 			// Kick reason
 		{
 			"ControlName"	"Label"
-			"fieldName"		"Issue4"
+			"fieldName"		"Kick_reason"
 			"xpos"			"10"
-			"ypos"			"-116"
-			"wide"			"120"
-			"tall"			"250"
+			"ypos"			"0"
+			"wide"			"130"
+			"tall"			"90"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%voteissue%"
-			"textAlignment"	"north-west"
+			"textAlignment"	"south-west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"DefaultVerySmall"  
+			"font"			"CustomVerdanaSmall"  
 			"fgcolor_override"	"255 255 255 255"
 			"wrap"			"1"
 			"noshortcutsyntax" "1"

@@ -3030,7 +3030,7 @@ Scheme
 		}
 
 		//
-		//////////////////// CUSTOM FONT //////////////////////////////
+		//////////////////// CUSTOM FONT MOD //////////////////////////////
 		//
 
 		"CustomNotoMonoVerySmall"
@@ -3079,6 +3079,16 @@ Scheme
 			{
 				"name" "CustomNotoMono"
 				"tall" "16"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CustomVerdanaSmall"
+		{
+			"1"
+			{
+				"name" "Verdana"
+				"tall" "7"
 				"additive"	"0"
 				"antialias" "1"
 			}
