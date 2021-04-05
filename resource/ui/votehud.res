@@ -156,7 +156,7 @@
 			"noshortcutsyntax" "1"
 		}
 
-		"Kick_name_large" 			// Player to be kicks name - large custom font
+		"Kick_name_large" 			// Player to be kicked name - large custom font
 		{
 			"ControlName"	"Label"
 			"fieldName"		"Kick_name_large"
@@ -176,7 +176,7 @@
 			"noshortcutsyntax" "1"
 		}
 
-		"Kick_name_small" 			// Player to be kicks name - small regular font
+		"Kick_name_small" 			// Player to be kicked name - small regular font
 		{
 			"ControlName"	"Label"
 			"fieldName"		"Kick_name_small"
