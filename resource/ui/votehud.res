@@ -161,7 +161,7 @@
 			"ControlName"	"Label"
 			"fieldName"		"Issue2"
 			"xpos"			"10"
-			"ypos"			"-131"
+			"ypos"			"-130"
 			"wide"			"120"
 			"tall"			"210"
 			"visible"		"1"
