@@ -194,8 +194,6 @@
 			"fgcolor_override"	"255 255 255 255"
 			"wrap"			"1"
 			"noshortcutsyntax" "1"
-					"paintborder"		"0"
-			"border"			"CyanBorderThick"
 		}
 
 		"Kick_reason" 			// Kick reason  (or other vote issue strings)
