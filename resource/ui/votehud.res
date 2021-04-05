@@ -136,7 +136,7 @@
 			"fgcolor_override"	"128 128 128 255"
 		}
 		
-		"Issue" 			// Kick: (or other vote issue strings)
+		"Issue" 			// Kick:
 		{
 			"ControlName"	"Label"
 			"fieldName"		"Issue"
@@ -181,9 +181,9 @@
 			"ControlName"	"Label"
 			"fieldName"		"Kick_name_small"
 			"xpos"			"10"
-			"ypos"			"0"
+			"ypos"			"70"
 			"wide"			"130"
-			"tall"			"172"
+			"tall"			"30"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%voteissue%"
@@ -194,9 +194,11 @@
 			"fgcolor_override"	"255 255 255 255"
 			"wrap"			"1"
 			"noshortcutsyntax" "1"
+					"paintborder"		"0"
+			"border"			"CyanBorderThick"
 		}
 
-		"Kick_reason" 			// Kick reason
+		"Kick_reason" 			// Kick reason  (or other vote issue strings)
 		{
 			"ControlName"	"Label"
 			"fieldName"		"Kick_reason"
