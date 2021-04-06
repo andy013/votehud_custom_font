@@ -14,7 +14,7 @@ Examples:
 ### How does it work?
 
 The mod uses a custom edited version of the Noto Mono font. Most characters outside of the normal English alphabet and drawn as error rectangles.
-An empty rectangle is just a regular character, a filled in rectange is a character that could be drawn behind another character.
+An empty rectangle is just a regular character, a filled in rectangle is a character that could be drawn behind another character.
 
 The UI also draws the usernames in a regular font so you can see what they would appear like to most other players and tell apart different unicode characters. 
 
