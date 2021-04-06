@@ -52,6 +52,8 @@ The mod currently only works if your steam language is set to English. I may con
 The font does not work correctly if used in the chat box (it still works but some characters will still be invisible).  It was designed for Label VGUI elements. 
 Right now, this mod just uses it within the voting panels. 
 
+This mod was designed for Windows. It is untested on Mac and Linux. 
+
 
 ## Is this compatible with other custom HUDS?
 
