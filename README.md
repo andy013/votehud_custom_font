@@ -8,15 +8,15 @@ A small mod for TF2 that uses a custom font to draw many of the invisible charac
 
 Examples:
  
-![](https://i.imgur.com/dQJRIMt.png)    ![](https://i.imgur.com/o2rLbub.png)   ![](https://i.imgur.com/aSfubar.png) 
+![](https://i.imgur.com/4k5lIGO.png)    ![](https://i.imgur.com/9ztja2b.png)   ![](https://i.imgur.com/fspDpyY.png) 
 
 
 ### How does it work?
 
-The mod uses a custom edited version of the NotoMono font. Most characters outside of the normal English alphabet and drawn as error rectangles.
+The mod uses a custom edited version of the Noto Mono font. Most characters outside of the normal English alphabet and drawn as error rectangles.
 An empty rectangle is just a regular character, a filled in rectange is a character that could be drawn behind another character.
 
-The UI also draws the usernames in the original fonts so you can see what they would appear like to most other players and tell apart different unicode characters. 
+The UI also draws the usernames in a regular font so you can see what they would appear like to most other players and tell apart different unicode characters. 
 
 
 ### Install instructions
@@ -47,9 +47,9 @@ Program Files (x86)
 
 ### Current Limitations
 
-The mod currently only works if your steam language is set to English. I may convert it over for other languages if there is enough demand. 
+The mod currently only works if your steam language is set to English. I may convert it over to other languages if there is enough demand. 
 
-The font does not work correctly if used in the chat box (it still works but some characters will still be invisible).  It only works for Label hud elements. 
+The font does not work correctly if used in the chat box (it still works but some characters will still be invisible).  It was designed for Label VGUI elements. 
 Right now, this mod just uses it within the voting panels. 
 
 
