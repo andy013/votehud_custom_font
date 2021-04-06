@@ -62,7 +62,7 @@ which is used by other custom HUDs.
 
 ## I am the creator of a custom HUD, can I use the font from this mod in my HUD?
 
-Yes. Just make sure you set the range value to `0x0021 0xFFFF` for your language (as set in steam) in order for the font to work correctly. The font wont display correctly if installed as a system font. It has to be imported in the clientshceme.res file E.g.
+Yes. Just make sure you set the range value to `0x0021 0xFFFF` for your language (as set in steam) in order for the font to work correctly. The font wont display correctly if installed as a system font. It has to be imported in the clientscheme.res file E.g.
 
 ``` 
 clientscheme.res
