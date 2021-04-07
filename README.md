@@ -84,3 +84,41 @@ CustomFontFiles
 }
 ```
 
+If you are trying to integrate this into your existing custom HUD. Make sure you also copy the font declarations at line 3033. You can ctrl + F for CUSTOM FONT MOD and you will find them. Or just copy and paste them from here into the fonts section of your `clientscheme.res`
+
+```
+		//
+		//////////////////// CUSTOM FONT MOD //////////////////////////////
+		//
+
+		"CustomNotoMonoVerySmall"
+		{
+			"1"
+			{
+				"name" "CustomNotoMono"
+				"tall" "8"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CustomNotoMonoMedium"
+		{
+			"1"
+			{
+				"name" "CustomNotoMono"
+				"tall" "12"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CustomVerdanaSmall"
+		{
+			"1"
+			{
+				"name" "Verdana"
+				"tall" "7"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+```
