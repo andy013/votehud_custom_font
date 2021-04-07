@@ -14,14 +14,14 @@ Examples:
 ### How does it work?
 
 The mod uses a custom edited version of the Noto Mono font. Most characters outside of the normal English alphabet and drawn as error rectangles.
-An empty rectangle is just a regular character, a filled in rectange is a character that could be drawn behind another character.
+An empty rectangle is just a regular character, a filled in rectangle is a character that could be drawn behind another character.
 
 The UI also draws the usernames in a regular font so you can see what they would appear like to most other players and tell apart different unicode characters. 
 
 
 ### Install instructions
 
-Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/archive/refs/heads/main.zip) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
+Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/files/6268634/votehud_custom_font.zip) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
 
 ```
 Program Files (x86)
@@ -52,6 +52,8 @@ The mod currently only works if your steam language is set to English. I may con
 The font does not work correctly if used in the chat box (it still works but some characters will still be invisible).  It was designed for Label VGUI elements. 
 Right now, this mod just uses it within the voting panels. 
 
+This mod was designed for Windows. It is untested on Mac and Linux. 
+
 
 ## Is this compatible with other custom HUDS?
 
@@ -62,7 +64,7 @@ which is used by other custom HUDs.
 
 ## I am the creator of a custom HUD, can I use the font from this mod in my HUD?
 
-Yes. Just make sure you set the range value to `0x0021 0xFFFF` for your language (as set in steam) in order for the font to work correctly. E.g.
+Yes. Just make sure you set the range value to `0x0021 0xFFFF` for your language (as set in steam) in order for the font to work correctly. The font wont display correctly if installed as a system font. It has to be imported in the clientscheme.res file E.g.
 
 ``` 
 clientscheme.res
@@ -82,3 +84,41 @@ CustomFontFiles
 }
 ```
 
+If you are trying to integrate this into your existing custom HUD. Make sure you also copy the font declarations at line 3033. You can ctrl + F for CUSTOM FONT MOD and you will find them. Or just copy and paste them from here into the fonts section of your `clientscheme.res`
+
+```
+		//
+		//////////////////// CUSTOM FONT MOD //////////////////////////////
+		//
+
+		"CustomNotoMonoVerySmall"
+		{
+			"1"
+			{
+				"name" "CustomNotoMono"
+				"tall" "8"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CustomNotoMonoMedium"
+		{
+			"1"
+			{
+				"name" "CustomNotoMono"
+				"tall" "12"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CustomVerdanaSmall"
+		{
+			"1"
+			{
+				"name" "Verdana"
+				"tall" "7"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+```
