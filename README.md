@@ -21,7 +21,7 @@ The UI also draws the usernames in a regular font so you can see what they would
 
 ### Install instructions
 
-Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/archive/refs/heads/main.zip) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
+Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/files/6268634/votehud_custom_font.zip) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
 
 ```
 Program Files (x86)
