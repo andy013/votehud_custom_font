@@ -16,10 +16,17 @@ Examples:
 The mod uses a custom edited version of the Noto Mono font. Most characters outside of the normal English alphabet and drawn as error rectangles.
 An empty rectangle is just a regular character, a filled in rectangle is a character that could be drawn behind another character.
 
-The UI also draws the usernames in a regular font so you can see what they would appear like to most other players and tell apart different unicode characters. 
+The UI also draws the usernames in a regular font so you can see what they would appear like to most other players and tell apart different Unicode characters. 
 
+### Why do bots have strange characters in their names?
 
-### Install instructions
+Normally if you try and copy someone else's name, the server will add a number in parenthesis to the beginning like this `(1)Andy`. 
+The bots get around this by using invisible control characters or characters from foreign languages that don't display correctly in the source engine.
+This mod tries to display all of these characters to help players determine the difference between a player and a bot who is trying to imitate them. 
+
+To clarify, **just because you see a box in someone's name does not mean they are a bot**. There are many different Unicode characters that TF2 players legitimately use in their names. These will all show up as boxes in my font. For example, if you use Chinese symbols in your name. What the font allows you to do is see most of the invisible characters and compare a persons name to a bot that copied them. If someone has the exact same name as someone else but they have an invisible character added, this should allow you to see that character and make a decision as to whether it is a bot copy or not.
+
+## Install instructions
 
 Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/files/6268634/votehud_custom_font.zip) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
 
