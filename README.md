@@ -26,6 +26,10 @@ This mod tries to display all of these characters to help players determine the 
 
 To clarify, **just because you see a box in someone's name does not mean they are a bot**. There are many different Unicode characters that TF2 players legitimately use in their names. These will all show up as boxes in my font. For example, if you use Chinese symbols in your name. What the font allows you to do is see most of the invisible characters and compare a persons name to a bot that copied them. If someone has the exact same name as someone else but they have an invisible character added, this should allow you to see that character and make a decision as to whether it is a bot copy or not.
 
+### Will this mod get me VAC banned?
+
+No. This is just a custom HUD which is allowed by Valve. It doesn't modify the code of the game in any way. It simply changes the font and layout of the vote panels. It will also work on all servers even if they have sv_pure 2 enabled. 
+
 ## Install instructions
 
 Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/files/6268634/votehud_custom_font.zip) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
@@ -54,7 +58,7 @@ Program Files (x86)
 
 ### Current Limitations
 
-The mod currently only works if your steam language is set to English. I may convert it over to other languages if there is enough demand. 
+**The mod currently only works if your Steam language is set to English.** I may convert it over to other languages if there is enough demand. 
 
 The font does not work correctly if used in the chat box (it still works but some characters will still be invisible).  It was designed for Label VGUI elements. 
 Right now, this mod just uses it within the voting panels. 
