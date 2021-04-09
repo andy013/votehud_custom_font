@@ -3071,7 +3071,11 @@ Scheme
 	// describes all the border types
 	Borders
 	{
-		CyanBorderThick 			// Custom Font Mod Border
+		
+
+	//////////////////// CUSTOM FONT MOD CYAN BORDER //////////////////////////////
+	//
+		CyanBorderThick 
 		{
 			"inset" "0 0 0 0"
 			Left
@@ -3147,7 +3151,8 @@ Scheme
 				}
 			}
 		}
-		
+
+
 		NoBorder
 		{
 			"inset" "0 0 0 0"
@@ -5951,6 +5956,11 @@ Scheme
 				"range" "0x0000 0x007E"
 			}
 		}
+
+		//
+		//////////////////// CUSTOM FONT MOD //////////////////////////////
+		//
+
 		"8" 
 		{
 			"font" "resource/CustomNotoMono.otf"
