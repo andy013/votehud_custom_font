@@ -5969,6 +5969,10 @@ Scheme
 			{
 				"range" "0x021 0xFFFF" 
 			}
+			"brazilian"
+			{
+				"range" "0x021 0xFFFF" 
+			}
 		}
 	}
 }
