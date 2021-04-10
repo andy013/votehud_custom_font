@@ -58,7 +58,7 @@ Program Files (x86)
 
 ### Current Limitations
 
-**The mod currently only works if your Steam language is set to English.** I may convert it over to other languages if there is enough demand. 
+**The mod currently only works if your Steam language is set to English or Brazilian.** I may convert it over to other languages if there is enough demand. 
 
 The font does not work correctly if used in the chat box (it still works but some characters will still be invisible).  It was designed for Label VGUI elements. 
 Right now, this mod just uses it within the voting panels. 
