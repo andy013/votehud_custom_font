@@ -32,7 +32,7 @@ No. This is just a custom HUD which is allowed by Valve. It doesn't modify the c
 
 ## Install instructions
 
-Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/files/6268634/votehud_custom_font.zip) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
+Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/releases/) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
 
 ```
 Program Files (x86)
