@@ -65,38 +65,27 @@ Right now, this mod just uses it within the voting panels.
 
 This mod was designed for Windows. It is untested on Mac and Linux. 
 
+## I am the creator of a custom HUD, can I use the font from this mod in my HUD?
+
+Yes. Just make sure you set the range value to `0x0021 0xFFFF` for your language (as set in steam) in order for the font to work correctly. The font wont display correctly if installed as a system font. It has to be imported in the clientscheme.res file.
+
 
 ## Is this compatible with other custom HUDS?
 
-Only if you are willing to edit the files manually. 
+Yes, if you are willing to edit the files manually. 
 
 Unfortunately in order to import a custom font into TF2 you need to modify the `clientscheme.res` file 
 which is used by other custom HUDs. 
 
-## I am the creator of a custom HUD, can I use the font from this mod in my HUD?
+Here are instructions for importing this into another custom HUD:
 
-Yes. Just make sure you set the range value to `0x0021 0xFFFF` for your language (as set in steam) in order for the font to work correctly. The font wont display correctly if installed as a system font. It has to be imported in the clientscheme.res file E.g.
+First open the `clientscheme.res` file for this mod and ctrl+F search for `CUSTOM FONT MOD`.
 
-``` 
-clientscheme.res
+Copy the 3 sections into the 3 appropriate sections of your custom HUDs `clientscheme.res` file, if your HUDs `clientscheme.res` file is split up you will need to find the right files to copy into.
 
-CustomFontFiles
-{
-...
-	"8" 
-	{
-		"font" "resource/CustomNotoMono.otf"
-		"name" "CustomNotoMono"
-		"english" 
-		{
-			"range" "0x021 0xFFFF"     <------ Must be set like this
-		}
-	}
-}
-```
+You can also copy them directly from this README.
 
-If you are trying to integrate this into your existing custom HUD. Make sure you also copy the font declarations at line 3033. You can ctrl + F for CUSTOM FONT MOD and you will find them. Or just copy and paste them from here into the fonts section of your `clientscheme.res`
-
+First, copy this into `Fonts`
 ```
 		//
 		//////////////////// CUSTOM FONT MOD //////////////////////////////
@@ -133,3 +122,112 @@ If you are trying to integrate this into your existing custom HUD. Make sure you
 			}
 		}
 ```
+
+Next copy this into the end of your `CustomFontFiles` (make sure you change the number 8 to however many custom fonts your HUD has. E.g. if your HUD currectly has 10, add this to the end and make it 11).
+
+```
+		//
+		//////////////////// CUSTOM FONT MOD //////////////////////////////
+		//
+
+		"8" 
+		{
+			"font" "resource/CustomNotoMono.otf"
+			"name" "CustomNotoMono"
+			"english" 
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"brazilian"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+		}
+```
+
+Lastly, copy this into `Borders`
+```
+	//////////////////// CUSTOM FONT MOD CYAN BORDER //////////////////////////////
+	//
+		CyanBorderThick 
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "15 255 255 255"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "15 255 255 255"
+					"offset" "1 0"
+				}
+				"3"
+				{
+					"color" "15 255 255 255"
+					"offset" "2 0"
+				}
+			}
+			Right
+			{
+				"1"
+				{
+					"color" "15 255 255 255"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "15 255 255 255"
+					"offset" "1 0"
+				}
+				"3"
+				{
+					"color" "15 255 255 255"
+					"offset" "2 0"
+				}
+			}
+			Top
+			{
+				"1"
+				{
+					"color" "15 255 255 255"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "15 255 255 255"
+					"offset" "1 0"
+				}
+				"3"
+				{
+					"color" "15 255 255 255"
+					"offset" "2 0"
+				}
+			}
+			Bottom
+			{
+				"1"
+				{
+					"color" "15 255 255 255"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "15 255 255 255"
+					"offset" "1 0"
+				}
+				"3"
+				{
+					"color" "15 255 255 255"
+					"offset" "2 0"
+				}
+			}
+		}
+```
+
+After doing this should be able to just copy and overwrite the rest of the files from this MOD into your custom HUDs directory. If your custom HUD has a `chat_english.txt` already you should be able to just copy the lines from this mods `chat_english.txt` under the CUSTOM FONT MOD comment into that file. 
+
+
+
