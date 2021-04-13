@@ -227,7 +227,7 @@ Lastly, copy this into `Borders`
 		}
 ```
 
-After doing this should be able to just copy and overwrite the rest of the files from this MOD into your custom HUDs directory. If your custom HUD has a `chat_english.txt` already you should be able to just copy the lines from this mods `chat_english.txt` under the CUSTOM FONT MOD comment into that file. 
+After doing this you should be able to copy and overwrite the rest of the files from this MOD into your custom HUDs directory. If your custom HUD has a `chat_english.txt` already you should be able to copy the lines from this mods `chat_english.txt` under the CUSTOM FONT MOD comment into that file. 
 
 
 
