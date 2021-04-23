@@ -58,7 +58,18 @@ Program Files (x86)
 
 ### Current Limitations
 
-**The mod currently only works if your Steam language is set to English or Brazilian.** I may convert it over to other languages if there is enough demand. 
+**The mod currently only works if your Steam language is set to one of the following:**
+
+* **English**
+* **Brazilian Portuguese**
+* **French**
+* **German**
+* **Italian**
+* **Polish**
+* **Russian**
+* **Spanish** 
+
+I may convert it over to other languages if there is enough demand. Please create an issue if you wish to request support for a langauge not listed here.
 
 The font does not work correctly if used in the chat box (it still works but some characters will still be invisible).  It was designed for Label VGUI elements. 
 Right now, this mod just uses it within the voting panels. 
@@ -96,7 +107,7 @@ First, copy this into `Fonts`
 			"1"
 			{
 				"name" "CustomNotoMono"
-				"tall" "8"
+				"tall" "9"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -132,13 +143,37 @@ Next copy this into the end of your `CustomFontFiles` (make sure you change the 
 
 		"8" 
 		{
-			"font" "resource/CustomNotoMono.otf"
+			"font" "resource/CustomNotoMono.ttf"
 			"name" "CustomNotoMono"
 			"english" 
 			{
 				"range" "0x021 0xFFFF" 
 			}
 			"brazilian"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"french"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"german"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"italian"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"polish"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"russian"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"spanish"
 			{
 				"range" "0x021 0xFFFF" 
 			}
@@ -227,7 +262,7 @@ Lastly, copy this into `Borders`
 		}
 ```
 
-After doing this you should be able to copy and overwrite the rest of the files from this MOD into your custom HUDs directory. If your custom HUD has a `chat_english.txt` already you should be able to copy the lines from this mods `chat_english.txt` under the CUSTOM FONT MOD comment into that file. 
+After doing this you should be able to copy and overwrite the rest of the files from this MOD into your custom HUDs directory. If your custom HUD has a `chat_<language>.txt` already you should be able to copy the lines from this mods `chat_<language>.txt` under the CUSTOM FONT MOD comment into that file. You only need to copy from the languages you wish to use in TF2, so for english you would copy from `chat_english.txt`.
 
 
 
