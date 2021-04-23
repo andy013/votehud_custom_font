@@ -3038,7 +3038,7 @@ Scheme
 			"1"
 			{
 				"name" "CustomNotoMono"
-				"tall" "8"
+				"tall" "9"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -5963,13 +5963,37 @@ Scheme
 
 		"8" 
 		{
-			"font" "resource/CustomNotoMono.otf"
+			"font" "resource/CustomNotoMono.ttf"
 			"name" "CustomNotoMono"
 			"english" 
 			{
 				"range" "0x021 0xFFFF" 
 			}
 			"brazilian"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"french"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"german"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"italian"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"polish"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"russian"
+			{
+				"range" "0x021 0xFFFF" 
+			}
+			"spanish"
 			{
 				"range" "0x021 0xFFFF" 
 			}
