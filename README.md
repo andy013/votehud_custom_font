@@ -8,7 +8,7 @@ A small mod for TF2 that uses a custom font to draw many of the invisible charac
 
 Examples:
  
-![](https://i.imgur.com/4k5lIGO.png)    ![](https://i.imgur.com/9ztja2b.png)   ![](https://i.imgur.com/fspDpyY.png) 
+![](https://i.imgur.com/ygqLt7u.png)    ![](https://i.imgur.com/bEfX4pa.png)   ![](https://i.imgur.com/PQvlaN6.png) ![](https://i.imgur.com/mctfswo.png) 
 
 
 ### How does it work?
