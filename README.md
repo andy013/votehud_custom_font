@@ -72,7 +72,7 @@ If you have a custom HUD installed there are a few more steps you need to do to 
 
 3. Go back to your resource folder and look for a file called `chat_<language>.txt`. Replace `<language>` with whatever language you have set in steam (e.g. for english look for `chat_english.txt`). If your HUD has this file, then you will need to copy some lines from the same file in `zzz_votehud_custom_font`. If your HUD doesn't have this file then you can skip this step.
 
-	In the zzz_votehud_custom_font `chat_<language>.txt` file you will see a couple of block comments, one labeled `CUSTOM FONT MOD START` and another `CUSTOM FONT MOD END`. Copy all the text in between these 2 comments and paste it into your `chat_<language>.txt` file in your custom HUDs resource folder. In that file look for a line that says `"Tokens"` after that there should be an open curly brace `{`. Add a new line after this curly brace and paste the text that you copied from this mod there and save the file. 
+	In the zzz_votehud_custom_font `chat_<language>.txt` file you will see a couple of block comments, one labelled `CUSTOM FONT MOD START` and another `CUSTOM FONT MOD END`. Copy all the text in between these 2 comments and paste it into your `chat_<language>.txt` file in your custom HUDs resource folder. In that file look for a line that says `"Tokens"` after that there should be an open curly brace `{`. Add a new line after this curly brace and paste the text that you copied from this mod there and save the file. 
 
 If you have followed these steps correctly you should now see this mod being used for the voting panels. 
 
