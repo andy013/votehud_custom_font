@@ -14,7 +14,7 @@ Examples:
 ### How does it work?
 
 The mod uses a custom edited version of the Noto Mono font. Most characters outside of the normal English alphabet are drawn as error rectangles.
-An empty rectangle is just a regular character, a filled in rectangle is a character that could be drawn behind another character.
+An empty rectangle is just a regular character, a filled in rectangle is a character that could be drawn behind another character. Cyrillic / Russian characters are drawn with an underline. 
 
 The UI also draws the usernames in a regular font so you can see what they would appear like to most other players and tell apart different Unicode characters. 
 
@@ -30,9 +30,13 @@ To clarify, **just because you see a box in someone's name does not mean they ar
 
 No. This is just a custom HUD which is allowed by Valve. It doesn't modify the code of the game in any way. It simply changes the font and layout of the vote panels. It will also work on all servers even if they have sv_pure 2 enabled. 
 
+## Is this compatible with other custom HUDS?
+
+Yes, see the install instructions below. 
+
 ## Install instructions
 
-Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/releases/) to a folder named `votehud_custom_font` in your `tf/custom` directory. E.g.
+Copy the files from [this repo](https://github.com/andy013/votehud_custom_font/releases/) to a folder named `zzz_votehud_custom_font` in your `tf/custom` directory. (the zzz makes sure the mod loads after any custom HUD you have installed) E.g.
 
 ```
 Program Files (x86)
@@ -49,12 +53,32 @@ Program Files (x86)
                     │
                     └───custom
                         │
-                        └───votehud_custom_font     <----- Folder must be named correctly
+                        └───zzz_votehud_custom_font     <----- Folder must be named correctly
                             │
                             │   info.vdf      <------ Mod files here
 			    │	README.md
                             └───resource
 ```
+
+If you have a custom HUD installed there are a few more steps you need to do to complete the installation:
+
+1. Go your custom HUDs resource folder. It should be something like: 
+
+	`C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\custom\<CUSTOM HUD NAME>\resource`
+
+	In there you will find a file called `clientscheme.res`. Rename this file to `clientscheme_OLD.res`.
+
+2. Go into the `ui` folder and look for `votehud.res`, if your HUD has this file then rename it to `votehud_OLD.res`. If your HUD doesn't have this file then just skip this step.
+
+3. Go back to your resource folder and look for a file called `chat_<language>.txt`. Replace `<language>` with whatever language you have set in steam (e.g. for english look for `chat_english.txt`). If your HUD has this file, then you will need to copy some lines from the same file in `zzz_votehud_custom_font`. If your HUD doesn't have this file then you can skip this step.
+
+	In the zzz_votehud_custom_font `chat_<language>.txt` file you will see a couple of block comments, one labeled `CUSTOM FONT MOD START` and another `CUSTOM FONT MOD END`. Copy all the text in between these 2 comments and paste it into your `chat_<language>.txt` file in your custom HUDs resource folder. In that file look for a line that says `"Tokens"` after that there should be an open curly brace `{`. Add a new line after this curly brace and paste the text that you copied from this mod there and save the file. 
+
+If you have followed these steps correctly you should now see this mod being used for the voting panels. 
+
+By default this mod will use a background colour as defined by your custom HUD. If you would rather override this and use the default grey you can edit the `votehud.res` file in this mods `resource\ui` folder. Look for the two lines that start with `// "bgcolor_override"` and remove the 2 slashes to uncomment them. One of them will make the active vote panel have a grey background and the other will do the same for the vote creation panel. 
+
+
 
 ### Current Limitations
 
@@ -79,190 +103,4 @@ This mod was designed for Windows. It is untested on Mac and Linux.
 ## I am the creator of a custom HUD, can I use the font from this mod in my HUD?
 
 Yes. Just make sure you set the range value to `0x0021 0xFFFF` for your language (as set in steam) in order for the font to work correctly. The font wont display correctly if installed as a system font. It has to be imported in the clientscheme.res file.
-
-
-## Is this compatible with other custom HUDS?
-
-Yes, if you are willing to edit the files manually. 
-
-Unfortunately in order to import a custom font into TF2 you need to modify the `clientscheme.res` file 
-which is used by other custom HUDs. 
-
-Here are instructions for importing this into another custom HUD:
-
-First open the `clientscheme.res` file for this mod and ctrl+F search for `CUSTOM FONT MOD`.
-
-Copy the 3 sections into the 3 appropriate sections of your custom HUDs `clientscheme.res` file, if your HUDs `clientscheme.res` file is split up you will need to find the right files to copy into.
-
-You can also copy them directly from this README.
-
-First, copy this into `Fonts`
-```
-		//
-		//////////////////// CUSTOM FONT MOD //////////////////////////////
-		//
-
-		"CustomNotoMonoVerySmall"
-		{
-			"1"
-			{
-				"name" "CustomNotoMono"
-				"tall" "9"
-				"additive"	"0"
-				"antialias" "1"
-			}
-		}
-		"CustomNotoMonoMedium"
-		{
-			"1"
-			{
-				"name" "CustomNotoMono"
-				"tall" "12"
-				"additive"	"0"
-				"antialias" "1"
-			}
-		}
-		"CustomVerdanaSmall"
-		{
-			"1"
-			{
-				"name" "Verdana"
-				"tall" "7"
-				"additive"	"0"
-				"antialias" "1"
-			}
-		}
-```
-
-Next copy this into the end of your `CustomFontFiles` (make sure you change the number 8 to however many custom fonts your HUD has. E.g. if your HUD currectly has 10, add this to the end and make it 11).
-
-```
-		//
-		//////////////////// CUSTOM FONT MOD //////////////////////////////
-		//
-
-		"8" 
-		{
-			"font" "resource/CustomNotoMono.ttf"
-			"name" "CustomNotoMono"
-			"english" 
-			{
-				"range" "0x021 0xFFFF" 
-			}
-			"brazilian"
-			{
-				"range" "0x021 0xFFFF" 
-			}
-			"french"
-			{
-				"range" "0x021 0xFFFF" 
-			}
-			"german"
-			{
-				"range" "0x021 0xFFFF" 
-			}
-			"italian"
-			{
-				"range" "0x021 0xFFFF" 
-			}
-			"polish"
-			{
-				"range" "0x021 0xFFFF" 
-			}
-			"russian"
-			{
-				"range" "0x021 0xFFFF" 
-			}
-			"spanish"
-			{
-				"range" "0x021 0xFFFF" 
-			}
-		}
-```
-
-Lastly, copy this into `Borders`
-```
-	//////////////////// CUSTOM FONT MOD CYAN BORDER //////////////////////////////
-	//
-		CyanBorderThick 
-		{
-			"inset" "0 0 0 0"
-			Left
-			{
-				"1"
-				{
-					"color" "15 255 255 255"
-					"offset" "0 0"
-				}
-				"2"
-				{
-					"color" "15 255 255 255"
-					"offset" "1 0"
-				}
-				"3"
-				{
-					"color" "15 255 255 255"
-					"offset" "2 0"
-				}
-			}
-			Right
-			{
-				"1"
-				{
-					"color" "15 255 255 255"
-					"offset" "0 0"
-				}
-				"2"
-				{
-					"color" "15 255 255 255"
-					"offset" "1 0"
-				}
-				"3"
-				{
-					"color" "15 255 255 255"
-					"offset" "2 0"
-				}
-			}
-			Top
-			{
-				"1"
-				{
-					"color" "15 255 255 255"
-					"offset" "0 0"
-				}
-				"2"
-				{
-					"color" "15 255 255 255"
-					"offset" "1 0"
-				}
-				"3"
-				{
-					"color" "15 255 255 255"
-					"offset" "2 0"
-				}
-			}
-			Bottom
-			{
-				"1"
-				{
-					"color" "15 255 255 255"
-					"offset" "0 0"
-				}
-				"2"
-				{
-					"color" "15 255 255 255"
-					"offset" "1 0"
-				}
-				"3"
-				{
-					"color" "15 255 255 255"
-					"offset" "2 0"
-				}
-			}
-		}
-```
-
-After doing this you should be able to copy and overwrite the rest of the files from this MOD into your custom HUDs directory. If your custom HUD has a `chat_<language>.txt` already you should be able to copy the lines from this mods `chat_<language>.txt` under the CUSTOM FONT MOD comment into that file. You only need to copy from the languages you wish to use in TF2, so for english you would copy from `chat_english.txt`.
-
-
 
