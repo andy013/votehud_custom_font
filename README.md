@@ -62,7 +62,7 @@ Program Files (x86)
 
 If you have a custom HUD installed there are a few more steps you need to do to complete the installation:
 
-1. Go your custom HUDs resource folder. It should be something like: 
+1. Go to your custom HUDs resource folder. It should be something like: 
 
 	`C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\custom\<CUSTOM HUD NAME>\resource`
 
