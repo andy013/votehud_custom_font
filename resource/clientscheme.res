@@ -1,4 +1,4 @@
-#base "../resource/clientscheme_OLD.res"
+#base "clientscheme_OLD.res"
 
 Scheme
 {
