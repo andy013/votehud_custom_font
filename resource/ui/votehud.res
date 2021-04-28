@@ -1,4 +1,4 @@
-#base "../../resource/ui/votehud_OLD.res"
+#base "votehud_OLD.res"
 
 "Resource/UI/VoteHud.res"
 {	
